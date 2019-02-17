@@ -51,7 +51,7 @@ Feature: Login
     Given ...
 ```
 
-- Kemudian run dengan ketik $ behave -i features/[nama file].feature file tersebut
+- Kemudian run dengan ketik ```$ behave -i features/[nama file].feature``` file tersebut
 
 ## Configuration
 ###### Browser
