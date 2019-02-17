@@ -40,11 +40,11 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Ketik perintah $ behave -f steps --dry-run features/ untuk melihat semua format scenario test yang bisa digunakan
 - Format penulisan scenario
 
-```
+```gherkin
 Feature: Login
 
   Scenario: Login Invalid
-    Given I navigate to "https://dev.ralali.xyz/"
+    Given I navigate to "https://ralali.com/"
     When I click Login
 
   Scenario: Login Valid
@@ -52,3 +52,10 @@ Feature: Login
 ```
 
 - Kemudian run dengan ketik $ behave -i features/[nama file].feature file tersebut
+
+## Configuration
+###### Browser
+- Buka file browser.py didalam folder features/
+
+###### Enviroment
+- Buka file enviroment.py didalam folder features/
