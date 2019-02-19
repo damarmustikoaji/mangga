@@ -30,10 +30,10 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Install kebutuhan library dan framework untuk project
 - Install behave, selenium webdriver, atau bisa install menggunakan file requirements.txt
 - Check library dan framework yang sudah terinstall pada virtual enviroment (after)
-- Ketik perintah $ behave pada terminal untuk run semua file scenario test
-- Ketik perintah $ behave -i features/[nama file].feature untuk run 1 file scenario test
-- Ketik perintah $ behave -f steps --dry-run features/ untuk melihat semua format scenario test dan step definitions
-- Ketik perintah $ behave --dry-run untuk melihat semua scenario test pada file .feature
+- Ketik perintah ```$ behave``` pada terminal untuk run semua file scenario test
+- Ketik perintah ```$ behave -i features/[nama file].feature``` untuk run 1 file scenario test
+- Ketik perintah ```$ behave -f steps --dry-run features/``` untuk melihat semua format scenario test dan step definitions
+- Ketik perintah ```$ behave --dry-run``` untuk melihat semua scenario test pada file .feature
 
 # Create Scenario Test (.feature)
 - Buat file didalam folder features/ dengan format [nama file].feature

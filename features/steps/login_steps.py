@@ -14,6 +14,6 @@ def step_impl(context, EMAIL):
 def step_impl(context, PASSWORD):
     context.home_page.passwordfill(PASSWORD)
 
-@step('I see a home page "{text}"')
+@step('I see text "{text}" on page')
 def step_impl(context, text):
     assert_true(context.home_page.verify(text))

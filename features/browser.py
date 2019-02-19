@@ -9,8 +9,12 @@ class Browser(object):
     if BROWSER == "Firefox" :
         options = Options()#firefox
         options.set_preference('dom.webnotifications.enabled', False)
+        options.set_preference('dom.push.enabled', False)
         options.set_preference('geo.enabled', False)
         driver = webdriver.Firefox(options=options, executable_path="../driver/mac/geckodriver")
+        driver.maximize_window()
+    elif BROWSER == "PhantomJS" :
+        driver = webdriver.PhantomJS(executable_path="../driver/mac/phantomjs")
         driver.maximize_window()
     else:
         options = webdriver.ChromeOptions()
@@ -19,8 +23,8 @@ class Browser(object):
         options.add_experimental_option("prefs",prefs)
         driver = webdriver.Chrome(chrome_options=options, executable_path="../driver/mac/chromedriver")
         driver.set_window_size(1280, 800)
-    driver.implicitly_wait(15)
-    driver.set_page_load_timeout(15)
+    driver.implicitly_wait(5)
+    driver.set_page_load_timeout(60)
     #driver.set_window_size(1280, 800)
 
     def close(context):
