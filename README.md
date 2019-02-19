@@ -27,9 +27,9 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Buat virtual enviroment untuk project ```$ virtualenv -p python3 <namafoldervirtual>```
 - Aktifkan folder virtual enviroment ``$ source <namafoldervirtual>/bin/activate```
 - Check library dan framework yang sudah terinstall pada virtual enviroment (before)
-- Install kebutuhan library dan framework untuk project
-- Install behave, selenium webdriver, atau bisa install menggunakan file requirements.txt
-- Check library dan framework yang sudah terinstall pada virtual enviroment (after)
+- Install kebutuhan library dan framework untuk project ```$ pip list```
+- Install behave, selenium webdriver, atau bisa install menggunakan file requirements.txt ```$ pip install -r requirements.txt```
+- Check library dan framework yang sudah terinstall pada virtual enviroment (after) ```$ pip list```
 - Ketik perintah ```$ behave``` pada terminal untuk run semua file scenario test
 - Ketik perintah ```$ behave -i features/[nama file].feature``` untuk run 1 file scenario test
 - Ketik perintah ```$ behave -f steps --dry-run features/``` untuk melihat semua format scenario test dan step definitions
