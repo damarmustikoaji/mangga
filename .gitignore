@@ -5,4 +5,4 @@
 .pyenv
 
 #image file on capture
-*.png
+capture/feature_errors/*.png
