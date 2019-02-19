@@ -23,9 +23,9 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Download (zip) atau git pull project automation test
 - Buka terminal
 - Masuk ke directory project
-- Check versi python (Minimal versi python 3), atau dan lakukan update versi
-- Buat virtual enviroment untuk project
-- Aktifkan folder virtual enviroment
+- Check versi python (Minimal versi python 3) ```$ python3 --version```, atau dan lakukan update versi bisa download [disini](https://www.python.org/downloads/)
+- Buat virtual enviroment untuk project ```$ virtualenv -p python3 <namafoldervirtual>```
+- Aktifkan folder virtual enviroment ``$ source <namafoldervirtual>/bin/activate```
 - Check library dan framework yang sudah terinstall pada virtual enviroment (before)
 - Install kebutuhan library dan framework untuk project
 - Install behave, selenium webdriver, atau bisa install menggunakan file requirements.txt
@@ -34,6 +34,7 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Ketik perintah ```$ behave -i features/[nama file].feature``` untuk run 1 file scenario test
 - Ketik perintah ```$ behave -f steps --dry-run features/``` untuk melihat semua format scenario test dan step definitions
 - Ketik perintah ```$ behave --dry-run``` untuk melihat semua scenario test pada file .feature
+- Untuk deactive virtualenv ```$ deactivate```
 
 # Create Scenario Test (.feature)
 - Buat file didalam folder features/ dengan format [nama file].feature
@@ -56,6 +57,11 @@ Feature: Login
 ## Configuration
 ###### Browser
 - Buka file browser.py didalam folder features/
+- Download ChromeDriver [disini](http://chromedriver.chromium.org/downloads)
+- Download GeckoDriver [disini](https://github.com/mozilla/geckodriver/releases)
+- Buat folder diluar project driver/
+
+![Browser Configuration](readme/readme2.png)
 
 ###### Enviroment
 - Buka file enviroment.py didalam folder features/
