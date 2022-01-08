@@ -11,8 +11,6 @@ from browser import Browser
 from pages.public_library import PublicLibrary
 from pages.public_page import PublicPage
 from pages.home_page import HomePage
-from pages.product_page import ProductPage
-from pages.search_results_page import SearchResultsPage
 
 def before_all(context):
 
@@ -26,8 +24,6 @@ def before_all(context):
     context.public_library = PublicLibrary()
     context.public_page = PublicPage()
     context.home_page = HomePage()
-    context.product_page = ProductPage()
-    context.search_results_page = SearchResultsPage()
 
     # Dir to output test artifacts
     context.artifacts_dir = 'capture'

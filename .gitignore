@@ -3,6 +3,7 @@
 
 #enviroment python
 .pyenv
+envname
 
 #image file on capture
 capture/feature_errors/*.png

@@ -24,7 +24,7 @@ Automation test aplikasi e-commerce Ralali.com menggunakan behave untuk kerangka
 - Buka terminal
 - Masuk ke directory project
 - Check versi python (Minimal versi python 3) ```$ python3 --version```, atau dan lakukan update versi bisa download [disini](https://www.python.org/downloads/)
-- Buat virtual enviroment untuk project ```$ virtualenv -p python3 <namafoldervirtual>```
+- Buat virtual enviroment untuk project ```$ virtualenv -p python3 <namafoldervirtual>``` atau jika error coba ```pip install --upgrade virtualenv``` kemudian ```virtualenv -p python3 envname```
 - Aktifkan folder virtual enviroment ``$ source <namafoldervirtual>/bin/activate```
 - Check library dan framework yang sudah terinstall pada virtual enviroment (before)
 - Install kebutuhan library dan framework untuk project ```$ pip list```
@@ -57,7 +57,7 @@ Feature: Login
 ## Configuration
 ###### Browser
 - Buka file browser.py didalam folder features/
-- Download ChromeDriver [disini](http://chromedriver.chromium.org/downloads)
+- Download ChromeDriver [disini](https://chromedriver.storage.googleapis.com/index.html) dan pastikan versi browser di local sama dengan chromedriver versi
 - Download GeckoDriver [disini](https://github.com/mozilla/geckodriver/releases)
 - Buat folder diluar project driver/
 

@@ -11,10 +11,10 @@ class HomePageLocator(object):
     SEARCH_FIELD    = (By.NAME, 'search')
     SUBMIT_BUTTON   = (By.XPATH, '//button[@class="btn btnSearchHome" and @type="submit"]')
 
-    LOGIN_BUTTON    = (By.XPATH, '//a[@class="btnHomeLogin btn btn-primary-ghost btn-alt btn-wide"]')
-    EMAIL_FIELD     = (By.NAME, 'email')
+    LOGIN_BUTTON    = (By.XPATH, '//button[@data-testid="button-submit"]')
+    EMAIL_FIELD     = (By.ID, 'username')
     NEXT_BUTTON     = (By.XPATH, '//button[@class="btn btn-primary pull-right" and @type="submit"]')
-    PASSWORD_FIELD  = (By.NAME, 'password')
+    PASSWORD_FIELD  = (By.XPATH, '//input[@data-testid="input-password"]')
     LOGIN_BUTTON2   = (By.XPATH, '//button[@class="btnHomeLogin btn btn-primary" and @type="button"]')
 
     ERROR_MSG       = (By.XPATH, '//div[@class="text-danger ng-binding ng-scope"]')
@@ -85,11 +85,11 @@ class HomePage(Browser):
 
     def emailfill(self, email):
         self.fill(email, *HomePageLocator.EMAIL_FIELD)
-        self.click_element(*HomePageLocator.NEXT_BUTTON)
+        # self.click_element(*HomePageLocator.NEXT_BUTTON)
 
     def passwordfill(self, password):
         self.fill(password, *HomePageLocator.PASSWORD_FIELD)
-        self.click_element(*HomePageLocator.LOGIN_BUTTON2)
+        # self.click_element(*HomePageLocator.LOGIN_BUTTON2)
 
     def verify(self, text):
         return self.get_element(By.XPATH, '//*[contains(text(), "'+text+'")]')
