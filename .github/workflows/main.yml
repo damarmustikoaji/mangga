@@ -41,7 +41,8 @@ jobs:
         && mkdir ../driver \
         && mkdir ../driver/mac \
         && mv chromedriver ../driver/mac \
-        && sudo chmod +x ../driver/mac/chromedriver
+        && sudo su \
+        && chmod +x ../driver/mac/chromedriver
     - name: Test with behave
       run: |
         behave -i features
