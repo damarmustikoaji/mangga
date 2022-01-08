@@ -38,10 +38,8 @@ jobs:
         && wget -q https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_linux64.zip \
         && unzip chromedriver_linux64.zip \
         && rm chromedriver_linux64.zip \
-        && mkdir ../driver \
-        && mkdir ../driver/mac \
-        && mv chromedriver ../driver/mac \
-        && chmod +x ../driver/mac
+        && mv chromedriver /usr/local/bin \
+        && chmod +x /usr/local/bin/chromedriver
     - name: Test with behave
       run: |
         behave -i features
