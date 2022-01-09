@@ -4,7 +4,7 @@ from selenium.webdriver.firefox.options import Options
 
 class Browser(object):
 
-    BROWSER = "Firefox"
+    BROWSER = "PhantomJS"
 
     if BROWSER == "Firefox" :
         options = Options()#firefox
