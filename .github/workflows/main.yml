@@ -55,6 +55,6 @@ jobs:
     #     && mkdir ../driver/mac \
     #     && mv geckodriver ../driver/mac/geckodriver \
     #     && sudo chmod +x ../driver/mac/geckodriver
-    # - name: Test with behave
-    #   run: |
-    #     behave -i features
+    - name: Test with behave
+      run: |
+        behave -i features

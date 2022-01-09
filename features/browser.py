@@ -4,7 +4,7 @@ from selenium.webdriver.firefox.options import Options
 
 class Browser(object):
 
-    BROWSER = "PhantomJS"
+    BROWSER = "Chrome"
 
     if BROWSER == "Firefox" :
         options = Options()#firefox
@@ -21,7 +21,7 @@ class Browser(object):
         #block permission webnotif
         prefs = {"profile.default_content_setting_values.notifications" : 2}
         options.add_experimental_option("prefs",prefs)
-        driver = webdriver.Chrome(chrome_options=options, executable_path="../driver/mac/chromedriver")
+        driver = webdriver.Chrome(chrome_options=options, executable_path="/usr/local/bin/chromedriver")
         driver.set_window_size(1280, 800)
     driver.implicitly_wait(5)
     driver.set_page_load_timeout(60)
