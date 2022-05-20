@@ -24,7 +24,7 @@ RUN python3 -m pip install -r requirements.txt
 RUN python3 -m pip install --disable-pip-version-check robotframework &&  pip install robotframework-selenium2library \
     && pip install xvfbwrapper && pip install robotframework-xvfb && pip install selenium
 
-RUN wget -q https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_current_amd64.deb \
+RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && dpkg -i google-chrome*.deb \
     && rm google-chrome*.deb \
     && wget -q https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_linux64.zip \
