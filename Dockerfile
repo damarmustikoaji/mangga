@@ -27,7 +27,7 @@ RUN python3 -m pip install --disable-pip-version-check robotframework &&  pip in
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && dpkg -i google-chrome*.deb \
     && rm google-chrome*.deb \
-    && wget -q https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_linux64.zip \
+    && wget -q https://chromedriver.storage.googleapis.com/101.0.4951.41/chromedriver_linux64.zip \
     && unzip chromedriver_linux64.zip \
     && rm chromedriver_linux64.zip \
     && mv chromedriver /usr/local/bin \
