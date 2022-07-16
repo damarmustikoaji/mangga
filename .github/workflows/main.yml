@@ -6,10 +6,8 @@ name: Mangga
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
   schedule:
-    - cron: '30 07 * * 1-5'
+    - cron: '0 20 * * *'
 
 jobs:
   testing:
