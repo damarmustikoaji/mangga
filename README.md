@@ -1,3 +1,4 @@
+[![Mangga](https://github.com/damarmustikoaji/mangga/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/damarmustikoaji/mangga/actions/workflows/main.yml)
 [![Python](https://img.shields.io/badge/Python-3.7.1-yellow.svg)](https://www.python.org/)
 [![Selenium](https://img.shields.io/badge/Selenium%20Webdriver-3.141.0-green.svg)](http://www.seleniumhq.org/)
 [![Behave](https://img.shields.io/badge/behave-1.2.6-blue.svg)](https://behave.readthedocs.io/en/latest/)
