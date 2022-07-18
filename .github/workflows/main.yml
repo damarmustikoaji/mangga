@@ -13,14 +13,16 @@ jobs:
   testing:
 
     runs-on: ubuntu-latest
-    container:
-      image: damarresin/matoa:latest
     steps:
     - uses: actions/checkout@v2
-    - name: Install dependencies
-      run: |
-        python -m pip install --upgrade pip
-        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Run the build process with Docker
+      uses: addnab/docker-run-action@v3
+      with:
+        image: damarresin/matoa:latest
+#     - name: Install dependencies
+#       run: |
+#         python -m pip install --upgrade pip
+#         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 #     - name: Check update
 #       run: |
 #         sudo apt-get update
