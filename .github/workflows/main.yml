@@ -18,7 +18,7 @@ jobs:
     - name: Run the build process with Docker
       uses: addnab/docker-run-action@v3
       with:
-        image: damarresin/matoa:latest
+        image: damarresin/matoa:2022-07-18_1816
 #     - name: Install dependencies
 #       run: |
 #         python -m pip install --upgrade pip
