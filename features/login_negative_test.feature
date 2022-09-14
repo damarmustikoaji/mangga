@@ -5,4 +5,4 @@ Feature: Login Testcase
     Then I fill email field using "emailnya@email.com"
     Then I fill password field using "passwordnya"
     When I click Login
-    And I see text "Belum Terdaftar" on page
+    And I see text "Email atau kata sandi yang Anda masukkan salah." on page
